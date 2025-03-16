@@ -46,7 +46,7 @@ def reset_points(event):
 def main():
     global fig, ax_img, ax_reset, button_reset, image
 
-    image_path = '/Users/janswidzinski/Code/Domestika/sketches/europe.jpg'
+    image_path = "europe.jpg"
     img_bgr = cv2.imread(image_path)
     if img_bgr is None:
         raise FileNotFoundError(f"Could not load image from {image_path}")
